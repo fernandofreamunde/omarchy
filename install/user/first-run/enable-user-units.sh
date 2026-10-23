@@ -25,8 +25,6 @@ for unit in \
   omarchy-sleep-lock.service \
   omarchy-migrate-notify.service \
   omarchy-fcitx5.service \
-  omarchy-crash-watch.service \
-  speech-dispatcher.socket \
   omarchy-crash-watch.service; do
   systemctl --user enable --now "$unit" || failed=1
 done
